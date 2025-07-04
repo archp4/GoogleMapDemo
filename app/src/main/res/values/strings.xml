@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GoogleMapDemo</string>
+    <string name="map_as_fragement">Map as Fragement</string>
+    <string name="humber_downtown">Humber Downtown</string>
+    <string name="humber_north">Humber North</string>
+    <string name="humber_lakeshore">Humber Lakeshore</string>
 </resources>
