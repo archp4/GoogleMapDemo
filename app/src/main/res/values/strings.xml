@@ -4,4 +4,5 @@
     <string name="humber_downtown">Humber Downtown</string>
     <string name="humber_north">Humber North</string>
     <string name="humber_lakeshore">Humber Lakeshore</string>
+    <string name="directions_button_text">Directions</string>
 </resources>

@@ -3,22 +3,12 @@ package com.archblog.googlemapdemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -38,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
     public void toMiniMap(View view) {
         Intent miniMap = new Intent(this, MiniMap.class);
         startActivity(miniMap);
+    }
+
+    public void toDirections(View view) {
+        Intent directionsIntent = new Intent(this, DirectionsActivity.class);
+        startActivity(directionsIntent);
     }
 }
