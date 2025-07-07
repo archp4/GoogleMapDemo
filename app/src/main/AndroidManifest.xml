@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleMapDemo">
         <activity
+            android:name=".MarkerDemo"
+            android:exported="false" />
+        <activity
             android:name=".MiniMap"
             android:exported="false" />
         <!--

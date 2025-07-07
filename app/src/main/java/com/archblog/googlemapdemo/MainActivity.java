@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Intent miniMap = new Intent(this, MiniMap.class);
         startActivity(miniMap);
     }
+
+    public void toMarkerDemo(View view) {
+        Intent miniMap = new Intent(this, MiniMap.class);
+        startActivity(miniMap);
+    }
 }
