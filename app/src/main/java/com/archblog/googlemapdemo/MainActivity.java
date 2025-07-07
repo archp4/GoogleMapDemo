@@ -29,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
         Intent miniMap = new Intent(this, MiniMap.class);
         startActivity(miniMap);
     }
-
     public void toDirections(View view) {
         Intent directionsIntent = new Intent(this, DirectionsActivity.class);
         startActivity(directionsIntent);
     }
+    public void toMarkerDemo(View view) {
+        Intent markerDemo = new Intent(this, MarkerDemo.class);
+        startActivity(markerDemo);
+    }
 }
+
