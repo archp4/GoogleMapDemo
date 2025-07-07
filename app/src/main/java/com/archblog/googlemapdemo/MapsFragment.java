@@ -15,6 +15,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.LatLngBounds; // Import LatLngBounds
 
 public class MapsFragment extends Fragment {
     private int selectedLocation;
@@ -56,6 +57,9 @@ public class MapsFragment extends Fragment {
                     title = "Humber Lakeshore Campus";
                     snippet = "Located near Lake Ontario in South Etobicoke";
                     break;
+                case 0: // Default case for DirectionsActivity, no specific location initially
+                    // No specific marker or camera movement needed here as DirectionsActivity handles it
+                    return;
             }
             googleMap.addMarker(new MarkerOptions().position(selectedValue).title(title).snippet(snippet));
             // googleMap.moveCamera(CameraUpdateFactory.newLatLng(selectedValue));
@@ -63,6 +67,11 @@ public class MapsFragment extends Fragment {
             googleMap.getUiSettings().setZoomControlsEnabled(true);
         }
     };
+
+    public MapsFragment(){
+        // Default constructor for use in DirectionsActivity
+        this.selectedLocation = 0; // Indicate no specific location initially
+    }
 
     public MapsFragment(int position){
         this.selectedLocation = position;
