@@ -34,7 +34,7 @@ public class MarkerDemo extends AppCompatActivity implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        mMap.getUiSettings().setZoomControlsEnabled(true);
         //North campus
         LatLng northCampus = new LatLng(43.7282, -79.6071);
         mMap.addMarker(new MarkerOptions().position(northCampus).title("Humber North Campus"));
